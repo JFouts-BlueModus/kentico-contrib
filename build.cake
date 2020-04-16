@@ -114,28 +114,28 @@ Task("NuGet-Pack")
 {
     // If the package already exists then don't package it
 
-    string packageSource = FindPackageSource(package.PackageName, package.PackageVersion);
+    // string packageSource = FindPackageSource(package.PackageName, package.PackageVersion);
 
-    if (!string.IsNullOrEmpty(packageSource))
-    {
-        Information("Skipping: {0} version {1} already exists on source {2}", package.PackageName, package.PackageVersion, packageSource);
+    // if (!string.IsNullOrEmpty(packageSource))
+    // {
+    //     Information("Skipping: {0} version {1} already exists on source {2}", package.PackageName, package.PackageVersion, packageSource);
 
-        return;
-    }
+    //     return;
+    // }
 
-    if (string.IsNullOrEmpty(packageSource) && package.IsPreRelease)
-    {
-        // We also need to check that the we're not attempting to pre-release a package that has already been released
+    // if (string.IsNullOrEmpty(packageSource) && package.IsPreRelease)
+    // {
+    //     // We also need to check that the we're not attempting to pre-release a package that has already been released
 
-        packageSource = FindPackageSource(package.PackageName, package.PackageReleaseVersion);
+    //     packageSource = FindPackageSource(package.PackageName, package.PackageReleaseVersion);
 
-        if (!string.IsNullOrEmpty(packageSource))
-        {
-            Information("Skipping: {0} cannot pre-release version {1} of package {2} that already exists on source {3}", package.PackageName, package.PackageVersion, package.PackageReleaseVersion, packageSource);
+    //     if (!string.IsNullOrEmpty(packageSource))
+    //     {
+    //         Information("Skipping: {0} cannot pre-release version {1} of package {2} that already exists on source {3}", package.PackageName, package.PackageVersion, package.PackageReleaseVersion, packageSource);
 
-            return;
-        }
-    }
+    //         return;
+    //     }
+    // }
 
     // Create the NuGet package
 
@@ -234,8 +234,8 @@ Task("Default")
     .IsDependentOn("Clean")
     .IsDependentOn("Restore-NuGet-Packages")
     .IsDependentOn("Version")
-    .IsDependentOn("Build")
-    .IsDependentOn("Run-Unit-Tests");
+    .IsDependentOn("Build");
+    //.IsDependentOn("Run-Unit-Tests");
 
 Task("Package")
     .IsDependentOn("Default")

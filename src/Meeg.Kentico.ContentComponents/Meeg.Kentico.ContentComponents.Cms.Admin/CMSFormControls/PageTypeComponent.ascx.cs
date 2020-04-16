@@ -18,6 +18,7 @@ namespace Meeg.Kentico.ContentComponents.Cms.Admin.CMSFormControls
     public partial class PageTypeComponent : FormEngineUserControl
     {
         private string deserializationError;
+        private PageTypeSerializationFactory serializationFactory;
 
         private string PageType
         {
@@ -29,6 +30,12 @@ namespace Meeg.Kentico.ContentComponents.Cms.Admin.CMSFormControls
         {
             get => GetValue("AlternativeFormName", string.Empty);
             set => SetValue("AlternativeFormName", value);
+        }
+
+        private string SerializationType
+        {
+            get => GetValue("SerializationType", string.Empty);
+            set => SetValue("SerializationType", value);
         }
 
         private string PageTypeFormName
@@ -58,7 +65,7 @@ namespace Meeg.Kentico.ContentComponents.Cms.Admin.CMSFormControls
 
                 // Return the component node serialized to XML
 
-                var serializer = new PageTypeComponentSerializer();
+                var serializer = serializationFactory.CreateSerializer(SerializationType);
                 return serializer.Serialize(ContentComponentNode);
             }
             set
@@ -104,6 +111,8 @@ namespace Meeg.Kentico.ContentComponents.Cms.Admin.CMSFormControls
         protected override void OnInit(EventArgs e)
         {
             base.OnInit(e);
+
+            serializationFactory = new PageTypeSerializationFactory();
 
             LoadContentComponentForm();
         }

@@ -1,0 +1,14 @@
+﻿<cms_resource version="12.0">
+  <NewDataSet>
+    <cms_resource>
+      <ResourceID>451</ResourceID>
+      <ResourceDisplayName>Content components</ResourceDisplayName>
+      <ResourceName>Meeg.Kentico.ContentComponents.Cms.Admin</ResourceName>
+      <ShowInDevelopment>false</ShowInDevelopment>
+      <ResourceGUID>b462dab3-ffd0-42cf-837c-7daea904c761</ResourceGUID>
+      <ResourceLastModified>2019-10-09T15:51:16.3042045+01:00</ResourceLastModified>
+      <ResourceIsInDevelopment>false</ResourceIsInDevelopment>
+      <ResourceHasFiles>false</ResourceHasFiles>
+    </cms_resource>
+  </NewDataSet>
+</cms_resource>

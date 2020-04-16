@@ -1,0 +1,28 @@
+﻿<cms_info version="12.0">
+  <NewDataSet>
+    <cms_info>
+      <Key>currentuser</Key>
+      <Value>administrator</Value>
+    </cms_info>
+    <cms_info>
+      <Key>starttime</Key>
+      <Value>08/03/2020 22:20:27</Value>
+    </cms_info>
+    <cms_info>
+      <Key>systemversion</Key>
+      <Value>12.0.7195.15164</Value>
+    </cms_info>
+    <cms_info>
+      <Key>hotfixversion</Key>
+      <Value>39</Value>
+    </cms_info>
+    <cms_info>
+      <Key>webapplication</Key>
+      <Value>True</Value>
+    </cms_info>
+    <cms_info>
+      <Key>modulename</Key>
+      <Value>Meeg.Kentico.ContentComponents.Cms.Admin</Value>
+    </cms_info>
+  </NewDataSet>
+</cms_info>

@@ -7,7 +7,7 @@ namespace Meeg.Kentico.ContentComponents.Cms
     /// <summary>
     /// This class can be used to serialise Page Type Component data to XML.
     /// </summary>
-    public class PageTypeComponentSerializer
+    public class PageTypeComponentSerializer : IPageTypeSerializer
     {
         /// <summary>
         /// Serialises a Page Type Component to XML.

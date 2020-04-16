@@ -1,0 +1,35 @@
+﻿<cms_formusercontrol version="12.0">
+  <NewDataSet>
+    <cms_formusercontrol>
+      <UserControlID>714</UserControlID>
+      <UserControlDisplayName>Page type component</UserControlDisplayName>
+      <UserControlCodeName>Meeg.Kentico.ContentComponents.Cms.Admin.PageTypeComponent</UserControlCodeName>
+      <UserControlFileName>~/CMSFormControls/Meeg.Kentico.ContentComponents.Cms.Admin/PageTypeComponent.ascx</UserControlFileName>
+      <UserControlForText>false</UserControlForText>
+      <UserControlForLongText>true</UserControlForLongText>
+      <UserControlForInteger>false</UserControlForInteger>
+      <UserControlForDecimal>false</UserControlForDecimal>
+      <UserControlForDateTime>false</UserControlForDateTime>
+      <UserControlForBoolean>false</UserControlForBoolean>
+      <UserControlForFile>false</UserControlForFile>
+      <UserControlShowInBizForms>false</UserControlShowInBizForms>
+      <UserControlDefaultDataType>Text</UserControlDefaultDataType>
+      <UserControlDefaultDataTypeSize>0</UserControlDefaultDataTypeSize>
+      <UserControlShowInDocumentTypes>true</UserControlShowInDocumentTypes>
+      <UserControlShowInSystemTables>false</UserControlShowInSystemTables>
+      <UserControlShowInWebParts>false</UserControlShowInWebParts>
+      <UserControlShowInReports>false</UserControlShowInReports>
+      <UserControlGUID>93bb4b50-949c-4796-874c-42c2b8a70828</UserControlGUID>
+      <UserControlLastModified>2019-10-09T22:17:03.0135784+01:00</UserControlLastModified>
+      <UserControlForGuid>false</UserControlForGuid>
+      <UserControlShowInCustomTables>false</UserControlShowInCustomTables>
+      <UserControlForVisibility>false</UserControlForVisibility>
+      <UserControlParameters>&lt;form version="2"&gt;&lt;category name="ContentModel"&gt;&lt;properties&gt;&lt;caption&gt;Content model&lt;/caption&gt;&lt;visible&gt;True&lt;/visible&gt;&lt;/properties&gt;&lt;/category&gt;&lt;field column="PageType" columnsize="200" columntype="text" guid="c53ea7b1-247b-451e-b647-0d544739af9c" publicfield="false" resolvedefaultvalue="False" visible="true"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Page type&lt;/fieldcaption&gt;&lt;fielddescription&gt;The page type that represents the content model for this component.&lt;/fielddescription&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AllowAll&gt;False&lt;/AllowAll&gt;&lt;AllowEmpty&gt;True&lt;/AllowEmpty&gt;&lt;controlname&gt;selectclassnames&lt;/controlname&gt;&lt;HideInheritedClasses&gt;False&lt;/HideInheritedClasses&gt;&lt;ReturnColumnName&gt;ClassName&lt;/ReturnColumnName&gt;&lt;SelectionMode&gt;0&lt;/SelectionMode&gt;&lt;ShowOnlyCoupled&gt;True&lt;/ShowOnlyCoupled&gt;&lt;/settings&gt;&lt;/field&gt;&lt;field allowempty="true" column="AlternativeFormName" columnsize="200" columntype="text" guid="981bef35-5b61-4bf5-a06a-896356835683" publicfield="false" resolvedefaultvalue="False" visible="true"&gt;&lt;properties&gt;&lt;fieldcaption&gt;Alternative form&lt;/fieldcaption&gt;&lt;fielddescription&gt;The code name of an alternative form (belonging to the selected page type) that should be used when editing this content. Leave blank to use the default form.&lt;/fielddescription&gt;&lt;/properties&gt;&lt;settings&gt;&lt;AutoCompleteEnableCaching&gt;False&lt;/AutoCompleteEnableCaching&gt;&lt;AutoCompleteFirstRowSelected&gt;False&lt;/AutoCompleteFirstRowSelected&gt;&lt;AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;False&lt;/AutoCompleteShowOnlyCurrentWordInCompletionListItem&gt;&lt;controlname&gt;TextBoxControl&lt;/controlname&gt;&lt;FilterMode&gt;False&lt;/FilterMode&gt;&lt;Trim&gt;True&lt;/Trim&gt;&lt;/settings&gt;&lt;/field&gt;&lt;/form&gt;</UserControlParameters>
+      <UserControlForDocAttachments>false</UserControlForDocAttachments>
+      <UserControlType>1</UserControlType>
+      <UserControlIsSystem>false</UserControlIsSystem>
+      <UserControlForBinary>false</UserControlForBinary>
+      <UserControlForDocRelationships>false</UserControlForDocRelationships>
+    </cms_formusercontrol>
+  </NewDataSet>
+</cms_formusercontrol>

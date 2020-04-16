@@ -71,9 +71,15 @@
   <ItemGroup>
     <Compile Include="ContentComponentExtensions.cs" />
     <Compile Include="IContentComponent.cs" />
+    <Compile Include="IPageTypeDeserializer.cs" />
+    <Compile Include="IPageTypeSerializer.cs" />
     <Compile Include="PageTypeComponentDeserializer.cs" />
+    <Compile Include="PageTypeComponentJsonDeserializer.cs" />
+    <Compile Include="PageTypeComponentJsonSerializer.cs" />
     <Compile Include="PageTypeComponentSerializer.cs" />
     <Compile Include="PageTypeContentComponentFactory.cs" />
+    <Compile Include="PageTypeSerializationFactory.cs" />
+    <Compile Include="PageTypeSerializationType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TreeNodeExtensions.cs" />
   </ItemGroup>
@@ -86,6 +92,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

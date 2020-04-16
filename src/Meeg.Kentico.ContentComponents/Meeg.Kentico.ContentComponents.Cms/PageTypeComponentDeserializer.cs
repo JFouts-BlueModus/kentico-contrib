@@ -7,7 +7,7 @@ namespace Meeg.Kentico.ContentComponents.Cms
     /// <summary>
     /// This class can be used to deserialise Page Type Component data that has been serialised to XML.
     /// </summary>
-    public class PageTypeComponentDeserializer
+    public class PageTypeComponentDeserializer : IPageTypeDeserializer
     {
         /// <summary>
         /// Deserialises Page Type Component XML and returns a new TreeNode instance containing component data.
